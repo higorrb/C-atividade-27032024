@@ -157,10 +157,10 @@ void aumentarSalarioFuncio(Empresa *funcionarios, int *indice){
 
 int main(){
     Empresa funcionarios[100];
-    int op = 1, indice = 0;
+    int op, indice = 0;
 
 
-    while (op != 0)
+    do
     {
         printf("\n\n~~~~~~~~~~MENU~~~~~~~~~~\n[1]-ELIMINAR REGISTRO\n[2]-ALTERAR REGISTRO\n[3]-INCLUIR REGISTRO\n[4]-LISTAR REGISTROS\n[5]-FUNCIONARIO +2 FILHOS\n[6]-SOMA DE SALARIO\n[7]-MAIOR SALARIO\n[8]-MENOR SALARIO\n[9]-AUMENTAR SALARIO\n[0]-ENCERRAR\n");
         printf("Digite uma opcao: ");
@@ -215,8 +215,6 @@ int main(){
             printf("Opcao INVALIDA!\n");
             break;
         }
-
-
-    }
+    }while (op != 0);
     return 0;
 }
